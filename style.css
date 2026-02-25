@@ -1955,6 +1955,8 @@ body.rtl .stat-number span:after {
 
     .navbar {
         gap: 12px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .logo-container {
@@ -1963,7 +1965,8 @@ body.rtl .stat-number span:after {
     }
 
     .logo {
-        font-size: 1.3rem;
+        white-space: nowrap;
+        font-size: 1.3rem; 
     }
 
     .nav-links-container {
@@ -2332,6 +2335,8 @@ body.rtl .stat-number span:after {
 
     .navbar {
         gap: 8px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .logo {
@@ -2439,6 +2444,10 @@ body.rtl .stat-number span:after {
 
     .nav-lang-btn i {
         display: none;
+    }
+    .navbar{
+         width: 100%;
+        max-width: 100%;
     }
 
     .logo {
