@@ -962,7 +962,7 @@ body.rtl .nav-links-container {
 }
 
 .card-item:hover img {
-    transform: scale(1.4);
+    transform: scale(1.1);
 }
 
 
@@ -2280,6 +2280,14 @@ body.rtl .stat-number span:after {
         gap: 20px;
         max-width: 100%;
     }
+    .banner-grid {
+        gap: 20px;
+        max-width: 100%;
+    }
+    .carousel-grid {
+        gap: 20px;
+        max-width: 100%;
+    }
 
     .project-overlay h4 {
         font-size: 1.2rem;
@@ -2451,7 +2459,7 @@ body.rtl .stat-number span:after {
     }
 
     .logo {
-        font-size: .8rem;
+        font-size: .92rem;
     }
 
     .hero-text h1 {
