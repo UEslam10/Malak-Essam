@@ -1898,7 +1898,7 @@ body.rtl .stat-number span:after {
     }
 
     .logo {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     /* Footer optimization */
@@ -2488,12 +2488,12 @@ body.rtl .stat-number span:after {
     }
 
     .banner-grid {
-        gap: 0px;
+        gap: 15px;
         max-width: 100%;
     }
 
     .carousel-grid {
-        gap: 10px;
+        gap: 15px;
         max-width: 100%;
     }
 
@@ -2596,7 +2596,7 @@ html {
 /* large tablet */
 @media (max-width: 1200px) {
     .video-section {
-        margin-top: 70px;
+        margin-top: 10px;
         background: var(--primary);
     }
 }
@@ -2604,7 +2604,7 @@ html {
 /* Tablet */
 @media (max-width: 992px) {
     .video-section {
-        margin-top: 85px;
+        margin-top: 10px;
         background: var(--primary);
     }
 }
@@ -2612,7 +2612,7 @@ html {
 /* Mobile */
 @media (max-width: 768px) {
     .video-section {
-        margin-top: 40px;
+        margin-top: -8px;
         background: var(--primary);
     }
 }
@@ -2620,7 +2620,7 @@ html {
 /* Small Mobile */
 @media (max-width: 480px) {
     .video-section {
-        margin-top: 60px;
+        margin-top: -5px;
         background: var(--primary);
     }
 }
