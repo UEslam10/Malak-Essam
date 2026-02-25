@@ -1897,6 +1897,10 @@ body.rtl .stat-number span:after {
         min-width: 75px;
     }
 
+    .logo{
+        font-size: 1.4rem;
+    }
+
     /* Footer optimization */
     .footer-content {
         gap: 40px;
@@ -1955,8 +1959,6 @@ body.rtl .stat-number span:after {
 
     .navbar {
         gap: 12px;
-        width: 100%;
-        max-width: 100%;
     }
 
     .logo-container {
@@ -1965,8 +1967,7 @@ body.rtl .stat-number span:after {
     }
 
     .logo {
-        white-space: nowrap;
-        font-size: 1.3rem; 
+        font-size: 1.1rem;
     }
 
     .nav-links-container {
@@ -1984,14 +1985,15 @@ body.rtl .stat-number span:after {
     .nav-lang-switcher {
         width: fit-content;
         margin: 0 auto;
-        padding: 6px 12px;
+        padding: 5px 10px;
         transform: scale(0.9);
+        gap: 7px;
     }
 
     .nav-lang-btn {
-        padding: 6px 12px;
+        padding: 5px 10px;
         min-width: 65px;
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
 
     .nav-links {
@@ -2334,31 +2336,23 @@ body.rtl .stat-number span:after {
     }
 
     .navbar {
-        gap: 1px;
+        gap: 8px;
     }
 
     .logo {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .nav-lang-switcher {
-        padding: 2px 8px;
-        gap: 1px;
-        transform: scale(0.85);
+        padding: 5px 10px;
+        gap: 5px;
+        transform: scale(0.8);
     }
 
     .nav-lang-btn {
         padding: 5px 10px;
-        gap: 1px;
         min-width: 60px;
         font-size: 0.8rem;
-    }
-
-    .theme-toggle{
-        padding: 5px 8px;
-        font-size: 10px;
-        margin-right: 1px;
-        transform: scale(0.85);
     }
 
     .mobile-menu-btn {
@@ -2451,13 +2445,13 @@ body.rtl .stat-number span:after {
     .nav-lang-btn i {
         display: none;
     }
-    .navbar{
-         width: 100%;
-        max-width: 100%;
+
+    .theme-toggle{
+        transform: scale(0.85);
     }
 
     .logo {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .hero-text h1 {
