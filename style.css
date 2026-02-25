@@ -1897,7 +1897,7 @@ body.rtl .stat-number span:after {
         min-width: 75px;
     }
 
-    .logo{
+    .logo {
         font-size: 1.4rem;
     }
 
@@ -2280,10 +2280,12 @@ body.rtl .stat-number span:after {
         gap: 20px;
         max-width: 100%;
     }
+
     .banner-grid {
         gap: 20px;
         max-width: 100%;
     }
+
     .carousel-grid {
         gap: 20px;
         max-width: 100%;
@@ -2454,12 +2456,12 @@ body.rtl .stat-number span:after {
         display: none;
     }
 
-    .theme-toggle{
+    .theme-toggle {
         transform: scale(0.85);
     }
 
     .logo {
-        font-size: .92rem;
+        font-size: .87rem;
     }
 
     .hero-text h1 {
@@ -2483,6 +2485,16 @@ body.rtl .stat-number span:after {
 
     .subsection-title h3 {
         font-size: 1.6rem;
+    }
+
+    .banner-grid {
+        gap: 0px;
+        max-width: 100%;
+    }
+
+    .carousel-grid {
+        gap: 10px;
+        max-width: 100%;
     }
 
     /* Testimonial cards optimization */
@@ -2636,7 +2648,7 @@ footer,
 .project-item img,
 .carousel-item img,
 .my-clint-item,
-.my-clint-item img  {
+.my-clint-item img {
     background: var(--bg);
     transition: 0.4s ease;
     color: #001097;
