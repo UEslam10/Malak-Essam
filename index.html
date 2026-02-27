@@ -1,9 +1,9 @@
-<html lang="en" dir="ltr">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> امير هاني | Amir Hany - Graphic Designer</title>
+    <title> ملك عصام | Malak Essam - Graphic Designer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -13,51 +13,66 @@
 </head>
 
 <body class="en" dir="ltr">
-    <!-- Header & Navigation -->
     <header id="header" class="scrolled">
         <div class="container">
-            <nav class="navbar">
-                <!-- Logo on left -->
+            <div class="navbar">
+                <!-- logo -->
                 <div class="logo-container">
-                    <a href="#home" class="logo" data-en="&lt;span&gt;Amir Hany&lt;/span&gt;"
-                        data-ar="&lt;span&gt;امير هاني&lt;/span&gt;"><span>Amir Hany</span></a>
+                    <a href="#home" class="logo" data-en="Fantasy Designer" data-ar="مصممة الخيال"><span>Fantasy
+                            Designer</span></a>
                 </div>
-
-                <!-- Language switcher in center -->
+                <!-- languge switcher -->
                 <div class="nav-lang-container">
                     <div class="nav-lang-switcher">
                         <button class="nav-lang-btn active" data-lang="en">
                             <i class="fas fa-globe"></i>
                             <span class="lang-text" data-en="EN" data-ar="EN">EN</span>
                         </button>
-                        <button class="nav-lang-btn" data-lang="ar">
+                        <button class="nav-lang-btn active" data-lang="ar">
                             <i class="fas fa-globe"></i>
                             <span class="lang-text" data-en="AR" data-ar="AR">AR</span>
                         </button>
                     </div>
+                </div> 
+
+                <!-- them -->
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch">
+                    <label for="theme-switch" class="toggle">
+                        <i class="fas fa-sun sun"></i>
+                        <i class="fas fa-moon moon"></i>
+                        <span class="ball"></span>
+                    </label>
                 </div>
 
-                <!-- Navigation links on right with mobile menu button -->
+                <!-- links -->
                 <div class="nav-links-container">
                     <ul class="nav-links">
                         <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
-                        <li><a href="#about" data-en="About" data-ar="من أنا">About</a></li>
+                        <li><a href="#about" data-en="About" data-ar="من انا">About</a></li>
                         <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
-                        <li><a href="#contact" data-en="Let's work" data-ar="راسلني لنعمل معاً">Let's work</a></li>
+                        <li><a href="#contact" data-en="Contact" data-ar="راسلني لنعمل معا">Let's work</a></li>
                     </ul>
-                    <button class="mobile-menu-btn" aria-label="Menu">
-                        <i class="fas fa-bars"></i>
+                    <button class="mobile-menu-btn" aria-label="menu">
+                        <i class=""></i>
                     </button>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
 
+    <!-- video -->
+    <section class="video-section">
+        <video class="section-video" width="100%" height="100%" style="margin-top: 75px;" autoplay muted loop playsinline>
+            <source src="video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
     <!-- Hero Section - Text Only -->
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 data-en="Amir Hany" data-ar="امير هاني">Amir Hany</h1>
+                <h1 data-en="Malak Essam" data-ar="ملك عصام">Malak Essam</h1>
                 <span class="designer-title" data-en="Senior Graphic Designer" data-ar="سينيور غرافيك ديزاينر">Senior
                     Graphic Designer</span>
                 <p data-en="I create thoughtful designs that tell meaningful brand stories and leave a lasting impression"
@@ -65,7 +80,7 @@
                     designs that tell meaningful brand stories and leave a lasting impression</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn" data-en="View My Work" data-ar="شاهد أعمالي">View My Work</a>
-                    <a href="#contact" class="btn" style="background: transparent; border: 2px solid var(--accent);"
+                    <a href="#contact" class="btn" style="background: transparent; border: 2px solid var(--primary);"
                         data-en="Let's work together" data-ar="راسلني لنعمل معاً">Let's work together</a>
                 </div>
             </div>
@@ -80,307 +95,462 @@
             </div>
             <div class="about-content">
                 <div class="about-image animated">
-                    <img src="imgs/profile.jpg" alt="Amir Hany" data-en="Amir Hany" data-ar="امير هاني ">
+                    <img src="imgs/me.jpeg" alt="Malak Esaam" data-en="Malak Esaam" data-ar="ملك عصام ">
                 </div>
                 <div class="about-text animated">
-                    <p data-en="I help brands appear with confidence and distinction through well-studied designs that reflect the essence of their identity and leave a real impact. With over 4 years of experience, I have worked with companies and clients from various Arab countries, delivering creative solutions that combine aesthetics, functionality, and clarity."
-                        data-ar="أساعد العلامات التجارية على الظهور بثقة وتميّز من خلال تصاميم مدروسة تعكس جوهر الهوية وتترك أثرا حقيقيًا. بخبرة تتجاوز 4 سنوات، عملت مع شركات وعملاء من مختلف الدول العربية، وقدّمت حلولًا إبداعية تجمع بين الجمال والوظيفة والوضوح.">
-                        I help brands appear with confidence and distinction through well-studied designs that reflect
-                        the essence of their identity and leave a real impact. With over 4 years of experience, I have
-                        worked with companies and clients from various Arab countries, delivering creative solutions
-                        that combine aesthetics, functionality, and clarity.</p>
-                    <p data-en="I offer specialized training workshops in the field of design, aiming to transfer practical experience to ambitious designers and help them build a strong professional foundation."
-                        data-ar="أقدّم ورشات تدريبية متخصصة في مجال التصميم، وأسعى إلى نقل الخبرة العملية للمصممين الطموحين ومساعدتهم على بناء أساس مهني قوي.">
-                        I offer specialized training workshops in the field of design, aiming to transfer practical
-                        experience to ambitious designers and help them build a strong professional foundation.</p>
-                    <p data-en="I also manage an online store specialized in all paper printing products (Hoor Advertising & Printing), where I combine authenticity, creativity, and quality to deliver distinctive products that meet clients’ expectations."
-                        data-ar="كما أنني أدير متجرًا إلكترونيًا (حور للدعاية والاعلان)  متخصصًا في جميع المطبوعات الورقي حيث أدمج بين الأصالة والإبداع والجودة لتقديم منتجات مميزة تلبي تطلعات العملاء">
-                        I also manage an online store specialized in all paper printing products (Hoor Advertising &
-                        Printing), where I combine authenticity, creativity, and quality to deliver distinctive products
-                        that meet clients’ expectations.</p>
+                    <p data-en="I am a passionate Graphic Designer specializing in social media content design, focused on creating visually compelling and strategic designs that help brands stand out in the digital space."
+                        data-ar="أنا مصممة جرافيك شغوفة ومتخصصة في تصميم محتوى السوشيال ميديا، أركز على إنشاء تصاميم بصرية جذابة واستراتيجية تساعد العلامات التجارية على التميز في العالم الرقمي.">
+                        I am a passionate Graphic Designer specializing in social media content design, focused on
+                        creating visually compelling and strategic designs that help brands stand out in the digital
+                        space.</p>
+                    <p data-en="I transform ideas and concepts into engaging visual solutions that reflect brand identity, communicate messages clearly, and support marketing objectives.
+With a strong eye for detail, color harmony, and modern design trends, I aim to deliver creative work that not only looks appealing but also drives engagement and strengthens brand presence."
+                        data-ar="أقوم بتحويل الأفكار والمفاهيم إلى حلول بصرية مؤثرة تعكس هوية البراند، وتوصل الرسائل بوضوح، وتدعم الأهداف التسويقية.
+بفضل اهتمامي القوي بالتفاصيل وتناسق الألوان ومواكبة أحدث اتجاهات التصميم، أسعى لتقديم أعمال إبداعية لا تبدو جميلة فقط، بل تساهم أيضًا في زيادة التفاعل وتعزيز حضور العلامة التجارية.">
+                        I transform ideas and concepts into engaging visual solutions that reflect brand identity,
+                        communicate messages clearly, and support marketing objectives.
+                        With a strong eye for detail, color harmony, and modern design trends, I aim to deliver creative
+                        work that not only looks appealing but also drives engagement and strengthens brand presence.
+                    </p>
+                    <p data-en="I believe successful design is the perfect balance between aesthetics, simplicity, and meaningful impact."
+                        data-ar="أؤمن أن التصميم الناجح هو التوازن المثالي بين الجمال والبساطة والتأثير الحقيقي">I
+                        believe successful design is the perfect balance between aesthetics, simplicity, and meaningful
+                        impact.</p>
                     <div class="skills">
                         <div class="skill" data-en="Logo &amp; Visual Identity" data-ar="اللوغو والهوية البصرية">Logo
                             &amp; Visual Identity</div>
                         <div class="skill" data-en="Print Design" data-ar="المطبوعات">Print Design</div>
                         <div class="skill" data-en="Social Media" data-ar="سوشيال ميديا">Social Media</div>
                         <div class="skill" data-en="Arabic Calligraphy" data-ar="الخط العربي">Arabic Calligraphy</div>
+                        <div class="skill" data-en="Carousel" data-ar="كاروسيلز">Carousel</div>
+                        <div class="skill" data-en="Electronic Cards" data-ar="كروت الكترونية">Electronic Cards</div>
+                        <div class="skill" data-en="Banner" data-ar="بانر">Banner</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section with FIXED 1080x1350 (4:5) Vertical Cards -->
+    <!-- my clints -->
+
+    <section class="my-clint">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="My Clints" data-ar="عملائي">My Clints</h2>
+            </div>
+            <div class="my-clint-grid">
+                <div class="my-clint-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="my-clint-image-container">
+                        <img src="imgs/clint 1.jpeg" alt="clint 1" data-en="clint 1" data-ar="عميل   1">
+                    </div>
+                    <div class="name">
+                        <span data-en="Doc. Waled" data-ar="دوك. وليد ">Doc. Waled</span>
+                    </div>
+                </div>
+                <div class="my-clint-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="my-clint-image-container">
+                        <img src="imgs/clint 2.jpeg" alt="clint 1" data-en="clint 2" data-ar="عميل   2">
+                    </div>
+                    <div class="name">
+                        <span data-en="American Car Services Brand" data-ar="براند امريكي لخدمات العربيات  ">American
+                            Car Services Brand</span>
+                    </div>
+                </div>
+                <div class="my-clint-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="my-clint-image-container">
+                        <img src="imgs/clint 3.jpeg" alt="clint 1" data-en="clint 3" data-ar="عميل   3">
+                    </div>
+                    <div class="name">
+                        <span data-en="Marketing Company" data-ar="شركة تسويق ">Marketing Company</span>
+                    </div>
+                </div>
+                <div class="my-clint-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="my-clint-image-container">
+                        <img src="imgs/clint 4.jpeg" alt="clint 1" data-en="clint 4" data-ar="عميل   4">
+                    </div>
+                    <div class="name">
+                        <span data-en="Mohamed Magdi" data-ar="محمد مجدي ">Mohamed Magdi</span>
+                    </div>
+                </div>
+    </section>
+
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-title">
                 <h2 data-en="My Projects" data-ar="مشاريعي">My Projects</h2>
             </div>
 
-            <!-- Brand Identity Subsection -->
+            <!-- social media  -->
             <div class="subsection-title animated">
-                <h3 data-en="Logo &amp; Visual Identity Projects" data-ar="مشاريع اللوغو والهوية البصرية">Logo &amp;
-                    Visual Identity Projects</h3>
+                <h3 data-en="Social Media Projects" data-ar="مشاريع السوشيال ميديا ">Social Media Projects</h3>
             </div>
             <div class="projects-grid">
                 <div class="project-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
                     <div class="project-image-container">
-                        <img src="imgs/Logo 1.jpeg" alt="Brand Identity Project 1" data-en="Brand Identity Project 1"
-                            data-ar="مشروع الهوية التجارية 1">
+                        <img src="imgs/social 1.png" alt="Social Media Projects 1" data-en="Social Media Projects 1"
+                            data-ar="مشروع السوشيال ميديا 1">
+                    </div>
+                </div>
+
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social 2.png" alt="Social Media Projects 2" data-en="Social Media Projects 2"
+                            data-ar="مشروع السوشيال ميديا 2">
+                    </div>
+                </div>
+
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social 3.png" alt="Social Media Projects 3" data-en="Social Media Projects 3"
+                            data-ar="مشروع السوشيال ميديا 3">
                     </div>
                 </div>
                 <div class="project-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
                     <div class="project-image-container">
-                        <img src="imgs/Logo 2.jpeg" alt="Brand Identity Project 2" data-en="Brand Identity Project 2"
-                            data-ar="مشروع الهوية التجارية 2">
+                        <img src="imgs/social 4.png" alt="Social Media Projects 4" data-en="Social Media Projects 4"
+                            data-ar="مشروع السوشيال ميديا 4">
                     </div>
                 </div>
                 <div class="project-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
                     <div class="project-image-container">
-                        <img src="imgs/Logo 3.jpeg" alt="Brand Identity Project 3" data-en="Brand Identity Project 3"
-                            data-ar="مشروع الهوية التجارية 3">
+                        <img src="imgs/social 5.png" alt="Social Media Projects 5" data-en="Social Media Projects 5"
+                            data-ar="مشروع السوشيال ميديا 5">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social 6.png" alt="Social Media Projects 6" data-en="Social Media Projects 6"
+                            data-ar="مشروع السوشيال ميديا 6">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social 7.png" alt="Social Media Projects 7" data-en="Social Media Projects 7"
+                            data-ar="مشروع السوشيال ميديا 7">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social 8.png" alt="Social Media Projects 8" data-en="Social Media Projects 8"
+                            data-ar="مشروع السوشيال ميديا 8">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social 9.png" alt="Social Media Projects 9" data-en="Social Media Projects 9"
+                            data-ar="مشروع السوشيال ميديا 9">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social a.png" alt="Social Media Projects 10" data-en="Social Media Projects 10"
+                            data-ar="مشروع السوشيال ميديا 10">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social b.png" alt="Social Media Projects 11" data-en="Social Media Projects 11"
+                            data-ar="مشروع السوشيال ميديا 11">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social c.png" alt="Social Media Projects 12" data-en="Social Media Projects 12"
+                            data-ar="مشروع السوشيال ميديا 12">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social d.png" alt="Social Media Projects 13" data-en="Social Media Projects 13"
+                            data-ar="مشروع السوشيال ميديا 13">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social e.jpeg" alt="Social Media Projects 14" data-en="Social Media Projects 14"
+                            data-ar="مشروع السوشيال ميديا 14">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social f.png" alt="Social Media Projects 15" data-en="Social Media Projects 15"
+                            data-ar="مشروع السوشيال ميديا 15">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social g.jpeg" alt="Social Media Projects 16" data-en="Social Media Projects 16"
+                            data-ar="مشروع السوشيال ميديا 16">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social h.jpeg" alt="Social Media Projects 17" data-en="Social Media Projects 17"
+                            data-ar="مشروع السوشيال ميديا 17">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social i.png" alt="Social Media Projects 18" data-en="Social Media Projects 18"
+                            data-ar="مشروع السوشيال ميديا 18">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social j.jpeg" alt="Social Media Projects 19" data-en="Social Media Projects 19"
+                            data-ar="مشروع السوشيال ميديا 19">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/social k.jpeg" alt="Social Media Projects 20" data-en="Social Media Projects 20"
+                            data-ar="مشروع السوشيال ميديا 20">
+                    </div>
+                </div>
+                <div class="project-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="project-image-container">
+                        <img src="imgs/scoial l.jpeg" alt="Social Media Projects 21" data-en="Social Media Projects 21"
+                            data-ar="مشروع السوشيال ميديا 21">
                     </div>
                 </div>
             </div>
-            <div class="projects-grid">
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/Logo 4.jpeg" alt="Brand Identity Project 4" data-en="Brand Identity Project 4"
-                            data-ar="مشروع الهوية التجارية 4">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/Logo 5.jpeg" alt="Brand Identity Project 5" data-en="Brand Identity Project 5"
-                            data-ar="مشروع الهوية التجارية 5">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/Logo 6.jpeg" alt="Brand Identity Project 6" data-en="Brand Identity Project 6"
-                            data-ar="مشروع الهوية التجارية 6">
-                    </div>
-                </div>
-            </div>
-            <!-- Social Media Projects Subsection - Grouped by Brand -->
+
+            <!-- banners -->
             <div class="subsection-title animated">
-                <h3 data-en="Social Media Projects" data-ar="مشاريع السوشيال ميديا">Social Media Projects</h3>
+                <h3 data-en="Banners" data-ar="بنرات">Banners</h3>
             </div>
-            <div class="projects-grid">
-                <div class="project-item animated"
+            <div class="banner-grid">
+                <div class="banner-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/social 1.jpeg" alt="Social Media Design 1" data-en="Social Media Design 1"
-                            data-ar="تصميم سوشيال ميديا 1">
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 1.jpeg" alt="SBanner 1" data-en="Banner 1" data-ar="بنر 1">
                     </div>
                 </div>
-                <div class="project-item animated"
+                <div class="banner-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/social 2.jpeg" alt="Social Media Design 2" data-en="Social Media Design 2"
-                            data-ar="تصميم سوشيال ميديا 2">
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 2.jpeg" alt="Banner 2" data-en="Banner 2" data-ar="بنر 2">
                     </div>
                 </div>
-                <div class="project-item animated"
+                <div class="banner-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/social 3.jpeg" alt="Social Media Design 3" data-en="Social Media Design 3"
-                            data-ar="تصميم سوشيال ميديا 3">
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 3.jpeg" alt="Banner 3" data-en="Banner 3" data-ar="بنر 3">
                     </div>
                 </div>
-                <div class="project-item animated"
+                <div class="banner-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/social 4.jpeg" alt="Social Media Design 4" data-en="Social Media Design 4"
-                            data-ar="تصميم سوشيال ميديا 4">
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 4.jpeg" alt="Banner 4" data-en="Baneer 4" data-ar="بنر 4">
                     </div>
                 </div>
-                <div class="project-item animated"
+                <div class="banner-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/social 5.jpeg" alt="Social Media Design 5" data-en="Social Media Design 5"
-                            data-ar="تصميم سوشيال ميديا 5">
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 5.jpeg" alt="Banner 5" data-en="Baneer 5" data-ar="بنر 5">
                     </div>
                 </div>
-                <div class="project-item animated"
+                <div class="banner-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="project-image-container">
-                        <img src="imgs/social 6.jpeg" alt="Social Media Design 6" data-en="Social Media Design 6"
-                            data-ar="تصميم سوشيال ميديا 6">
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 6.jpeg" alt="Banner 6" data-en="Baneer 6" data-ar="بنر 6">
                     </div>
                 </div>
-            </div>
-            <!-- Print Designs Subsection -->
-            <div class="subsection-title animated">
-                <h3 data-en="Print Design Projects" data-ar="مشاريع المطبوعات">Print Design Projects</h3>
-            </div>
-            <div class="projects-grid">
-                <div class="project-item animated"
+                <div class="banner-item animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Business Cards" data-ar="كروت شخصية">Business Cards</span>
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 7.jpeg" alt="Banner 7" data-en="Baneer 7" data-ar="بنر 7">
+                    </div>
+                </div>
+                <div class="banner-item animated"
+                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                    <div class="banner-image-container">
+                        <img src="imgs/banner 8.jpeg" alt="Banner 8" data-en="Baneer 8" data-ar="بنر 8">
+                    </div>
+                </div>
+                <!-- carousel 1 -->
+
+                <div class="subsection-title animated">
+                    <h3 data-en="Carousels 1" data-ar="كاروسيلز 1">Carousels 1</h3>
+                </div>
+                <div class="carousel-grid">
+                    <div class="carousel-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="carousel-image-container">
+                            <img src="imgs/carousel 1,1.jpeg" alt="Carousel 1" data-en="Carousel 1"
+                                data-ar=":كاروسيل 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="carousel-image-container">
+                            <img src="imgs/carousel 1,2.jpeg" alt="Carousel 2" data-en="Carousel 2"
+                                data-ar=":كاروسيل 2">
+                        </div>
+                    </div>
+                    <div class="carousel-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="carousel-image-container">
+                            <img src="imgs/carousel 1,3.jpeg" alt="Carousel 3" data-en="Carousel 3"
+                                data-ar=":كاروسيل 3">
+                        </div>
+                    </div>
+                    <div class="carousel-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="carousel-image-container">
+                            <img src="imgs/carousel 1,4.jpeg" alt="Carousel 4" data-en="Carousel 4"
+                                data-ar=":كاروسيل 4">
+                        </div>
+                    </div>
+                    <div class="carousel-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="carousel-image-container">
+                            <img src="imgs/carousel 1,5.jpeg" alt="Carousel 5" data-en="Carousel 5"
+                                data-ar="كاروسيل 5">
+                        </div>
+                    </div>
+                    <div class="carousel-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="carousel-image-container">
+                            <img src="imgs/carousel 1,6.jpeg" alt="Carousel 6" data-en="Carousel 6"
+                                data-ar=":كاروسيل 6">
+                        </div>
+                    </div>
+                    <!-- carousel 2 -->
+                </div>
+                <div class="subsection-title animated">
+                    <h3 data-en="Carousels 2" data-ar="كاروسيلز 2">Carousels 2</h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="project-image-container">
+                            <img src="imgs/carousel 2,1.jpeg" alt="Carousel 1" data-en="Carousel 1"
+                                data-ar=":كاروسيل 1">
+                        </div>
+                    </div>
+                    <div class="project-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="project-image-container">
+                            <img src="imgs/carousel 2,2.jpeg" alt="Carousel 2" data-en="Carousel 2"
+                                data-ar=":كاروسيل 2">
+                        </div>
+                    </div>
+                    <div class="project-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="project-image-container">
+                            <img src="imgs/carousel 2,3.jpeg" alt="Carousel 3" data-en="Carousel 3"
+                                data-ar=":كاروسيل 3">
+                        </div>
+                    </div>
+                    <div class="project-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="project-image-container">
+                            <img src="imgs/carousel 2,4.jpeg" alt="Carousel 4" data-en="Carousel 4"
+                                data-ar=":كاروسيل 4">
+                        </div>
+                    </div>
+                    <div class="project-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="project-image-container">
+                            <img src="imgs/carousel 2,5.jpeg" alt="Carousel 5" data-en="Carousel 5"
+                                data-ar=":كاروسيل 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="subsection-title animated">
+                    <h3 data-en="Electronic Cards" data-ar=" كروت الكترونية">Electronic Cards</h3>
+                </div>
+                <div class="card-grid">
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 1.png" alt="Electronic Cards 1" data-en="Electronic Cards 1"
+                                data-ar=":كارت الكتروني 1">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 2.png" alt="Electronic Cards 2" data-en="Electronic Cards 2"
+                                data-ar=":كارت الكتروني 2">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 3.png" alt="Electronic Cards 3" data-en="Electronic Cards 3"
+                                data-ar=":كارت الكتروني 3">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 4.png" alt="Electronic Cards 4" data-en="Electronic Cards 4"
+                                data-ar=":كارت الكتروني 4">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 5.png" alt="Electronic Cards 5" data-en="Electronic Cards 5"
+                                data-ar=":كارت الكتروني 5">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 6.png" alt="Electronic Cards 6" data-en="Electronic Cards 6"
+                                data-ar=":كارت الكتروني 6">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 7.png" alt="Electronic Cards 7" data-en="Electronic Cards 7"
+                                data-ar=":كارت الكتروني 7">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 8.png" alt="Electronic Cards 8" data-en="Electronic Cards 8"
+                                data-ar=":كارت الكتروني 8">
+                        </div>
+                    </div>
+                    <div class="card-item animated"
+                        style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
+                        <div class="card-image-container">
+                            <img src="imgs/card 9.png" alt="Electronic Cards 9" data-en="Electronic Cards 9"
+                                data-ar=":9  كارت الكتروني ">
+                        </div>
                     </div>
 
-                    <div class="project-image-container">
-                        <img src="imgs/printa.jpeg" alt="Print Design 1" data-en="Print Design 1"
-                            data-ar="تصميم المطبوعات 1">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Membership Cards" data-ar="بطاقات عضوية ">Membership Cards</span>
-                    </div>
-
-                    <div class="project-image-container">
-                        <img src="imgs/printb.jpeg" alt="Print Design 2" data-en="Print Design 2"
-                            data-ar="تصميم المطبوعات 2">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Letterheads" data-ar="مراسلات">Letterheads</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printc.jpeg" alt="Print Design 3" data-en="Print Design 3"
-                            data-ar="تصميم المطبوعات 3">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Seals" data-ar="أختام ">Seals</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printd.jpeg" alt="Print Design 4" data-en="Print Design 4"
-                            data-ar="تصميم المطبوعات 4">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Stickers" data-ar="استيكر ">Stickers</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printe.jpeg" alt="Print Design 5" data-en="Print Design 5"
-                            data-ar="تصميم المطبوعات 5">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Covers" data-ar="أغلفة ">Covers</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printf.jpeg" alt="Print Design 6" data-en="Print Design 6"
-                            data-ar="تصميم المطبوعات 6">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="circumstance" data-ar="أظرف">circumstance</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printg.jpeg" alt="Print Design 7" data-en="Print Design 7"
-                            data-ar="تصميم المطبوعات 7">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Menu's" data-ar="منيوهات">Menu's</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printh.jpeg" alt="Print Design 8" data-en="Print Design 8"
-                            data-ar="تصميم المطبوعات 8">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Boxes" data-ar="علب ">Boxes</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printi.jpeg" alt="Print Design 9" data-en="Print Design 9"
-                            data-ar="تصميم المطبوعات 9">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Brocher" data-ar="بروشر ">Brocher</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printj.jpeg" alt="Print Design 10" data-en="Print Design 10"
-                            data-ar="تصميم المطبوعات 10">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="Banner" data-ar="بنر">Banner</span>
-                    </div>
-
-                    <div class="project-image-container">
-                        <img src="imgs/printk.jpeg" alt="Print Design 11" data-en="Print Design 11"
-                            data-ar="تصميم المطبوعات 11">
-                    </div>
-                </div>
-                <div class="project-item animated"
-                    style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="name">
-                        <span data-en="BroRoll-Up" data-ar="رول اب ">BroRoll-Up</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="imgs/printl.jpeg" alt="Print Design 12" data-en="Print Design 12"
-                            data-ar="تصميم المطبوعات 12">
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-    <!-- partners -->
-    <section class="partners">
-        <div class="container">
-
-            <div class="section-title">
-                <h2 data-en="Trusted Partners" data-ar="شركاء النجاح">Trusted Partners</h2>
-            </div>
-            <div class="h2">
-                <h2 data-en="I'm happy with every project I've worked on, and proud of every step that brought me closer to my goal. Here are some of the companies I was able to help during the year, which helped me continue the journey with greater confidence and ambition."
-                    data-ar="سعيد بكل مشروع اشتغلت عليه، وفخور بكل خطوة قربتني من هدفي
-ودول بعض الشركات اللي قدرت اساعدهم خلال السنه، واللي كانت سبب في إن الرحلة تكمل بثقه وطموح اكبر">I'm happy with every
-                    project I've worked on, and proud of every step that brought me closer to my goal. Here are some of
-                    the companies I was able to help during the year, which helped me continue the journey with greater
-                    confidence and ambition.</h2>
-            </div>
-
-            <div class="partners-box">
-                <div class="partners-grid">
-
-                    <div class="partner"><img src="imgs/partner 1.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 2.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 3.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 4.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 5.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 6.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 7.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 8.jpeg"></div>
-                    <div class="partner"><img src="imgs/partner 9.jpeg"></div>
-
-                </div>
-            </div>
-
-        </div>
     </section>
 
     <!-- Testimonials Section -->
@@ -392,77 +562,38 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="testimonial-text"
-                        data-en="Amazing! Your work is incredible, artist! ♥️♥️ It looks even better than I expected!"
-                        data-ar="جامدة والله تسلم أيدك يا فنان ♥️♥️
-شكلها احلي ماكنت متوقع والله">Amazing! Your work is incredible, artist! ♥️♥️ It looks even better than I expected!
-                    </div>
-                    <div class="testimonial-client">
-                        <div class="client-info">
-                            <h4 data-en="Omar Elbadrawy" data-ar="عمر البداروي">Omar Elbadrawy</h4>
-                        </div>
+                    <div class="testimonial-text" data-en="Mashallah, looks great" data-ar="ما شاء الله جميل ">
+                        Mashallah, looks great
                     </div>
                 </div>
-
                 <div class="testimonial-card animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="testimonial-text"
-                        data-en="Thank you, dear prince, for your effort. The materials are excellent, may God bless you. Thank you 🙏😊"
-                        data-ar="شكرا حبيبي امير ع مجهودك خامات فوق الممتازه  ماشاء الله شكرا 🙏😊">Thank you, dear
-                        prince, for your effort. The materials are excellent, may God bless you. Thank you 🙏😊</div>
-                    <div class="testimonial-client">
-                        <div class="client-info">
-                            <h4 data-en="Fahd bin Ali" data-ar="فهد بن علي">Fahd bin Ali</h4>
-                        </div>
+                    <div class="testimonial-text" data-en="Excellent, much appreciated" data-ar="ممتاز تسلم ايدك ">
+                        Excellent, much appreciated
                     </div>
                 </div>
-
                 <div class="testimonial-card animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="testimonial-text"
-                        data-en="Amir, your work is amazing, mashallah! The page is so much brighter now, man! 😍❤️"
-                        data-ar="تسلم امير شغلك ماشاء الله  البيدج نورت كدا ياخي 😍❤️">Amir, your work is amazing,
-                        mashallah! The page is so much brighter now, man! 😍❤️</div>
-                    <div class="testimonial-client">
-                        <div class="client-info">
-                            <h4 data-en="Mohamed Al-Hadi" data-ar="محمد الهادي">Mohamed Al-Hadi</h4>
-                        </div>
+                    <div class="testimonial-text" data-en="Beautiful colors and everything looks great"
+                        data-ar="جميل الألوان وكل شئ ">Beautiful colors and everything looks great
                     </div>
                 </div>
-
                 <div class="testimonial-card animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="testimonial-text" data-en="Thank you, Amir, the cards and stickers are all wonderful 🌹"
-                        data-ar="شكرا ي امير  الكروت والاستيكر كلهم تحفه🌹">Thank you, Amir, the cards and stickers are
-                        all wonderful 🌹</div>
-                    <div class="testimonial-client">
-                        <div class="client-info">
-                            <h4 data-en="Zeina Store" data-ar="زينة ستور">Zeina Store</h4>
-                        </div>
+                    <div class="testimonial-text" data-en="Mashallah, Malak, excellent work — it looks really beautiful"
+                        data-ar="ماشاء الله عليكى يا ملك الشغل حلو جدا ">Mashallah, Malak, excellent work — it looks
+                        really beautiful
                     </div>
                 </div>
-
                 <div class="testimonial-card animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="testimonial-text"
-                        data-en="Thank you so much, you've been incredibly kind and helpful. I truly congratulate you on the result!"
-                        data-ar="شكرا الك جدا كلك ذوق في التعامل شابوو ع النتيجه بجد">Thank you so much, you've been
-                        incredibly kind and helpful. I truly congratulate you on the result!</div>
-                    <div class="testimonial-client">
-                        <div class="client-info">
-                            <h4 data-en="Ayman Al-Asili" data-ar="ايمن العسيلي">Ayman Al-Asili</h4>
-                        </div>
+                    <div class="testimonial-text" data-en="Amazing❤️❤️" data-ar="تحفة ❤️❤️">Amazing❤️❤️
                     </div>
                 </div>
-
                 <div class="testimonial-card animated"
                     style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
-                    <div class="testimonial-text" data-en="Excellent work, well done!" data-ar="شغل جامد جدا تسلم ايدك">
-                        Excellent work, well done!</div>
-                    <div class="testimonial-client">
-                        <div class="client-info">
-                            <h4 data-en="Mahmoud Hussein" data-ar="محمود حسين">Mahmoud Hussein</h4>
-                        </div>
+                    <div class="testimonial-text" data-en="Great job, Malak" data-ar="برافو عليكى يا ملك">Great job,
+                        Malak
                     </div>
                 </div>
             </div>
@@ -480,7 +611,7 @@
                 <!-- Stat 1: Experience - UPDATED to show +5 -->
                 <div class="stat-card animated" style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
                     <div class="stat-number">
-                        <span class="counter" data-target="4">4</span>
+                        <span class="counter" data-target="3">3</span>
                         <span class="stat-symbol">+</span> <!-- Added plus sign -->
                     </div>
                     <p class="stat-label" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</p>
@@ -489,7 +620,7 @@
                 <!-- Stat 2: Clients -->
                 <div class="stat-card animated" style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
                     <div class="stat-number">
-                        <span class="counter" data-target="60">60</span>
+                        <span class="counter" data-target="100">100</span>
                         <span class="stat-symbol">+</span>
                     </div>
                     <p class="stat-label" data-en="Clients" data-ar="العملاء">Clients</p>
@@ -498,7 +629,7 @@
                 <!-- Stat 3: Projects -->
                 <div class="stat-card animated" style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp;">
                     <div class="stat-number">
-                        <span class="counter" data-target="270">270</span>
+                        <span class="counter" data-target="100">100</span>
                         <span class="stat-symbol">+</span>
                     </div>
                     <p class="stat-label" data-en="Projects" data-ar="المشاريع">Projects</p>
@@ -512,27 +643,30 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3 data-en="Amir &lt;span&gt;Hany&lt;/span&gt;" data-ar="امير &lt;span&gt;هاني&lt;/span&gt;">Amir
-                        <span>Hany</span>
+                    <h3 data-en="Malak &lt;span&gt;Essam&lt;/span&gt;" data-ar="ملك &lt;span&gt;عصام&lt;/span&gt;">Malak
+                        <span>Esaam</span>
                     </h3>
                 </div>
                 <div class="footer-contact">
                     <h4 data-en="Let's work together" data-ar="راسلني لنعمل معاً">Let's work together</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> <span data-en="+2010 625 181 35"
-                                data-ar="+2010 625 181 35">+2010 625 181 35</span></li>
+                        <li><i class="fas fa-phone"></i> <span data-en="+2011 574 154 98"
+                                data-ar="+2011 574 154 98">+2011 574 154 98</span></li>
                         <li><i class="fas fa-location"></i> <span data-en="Egypt" data-ar="مصر">Egypt</span></li>
                     </ul>
                     <!-- Social Media Links Section -->
                     <div class="social-links">
                         <h4 data-en="Follow Me" data-ar="تابعني">Follow Me</h4>
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/amir_hany1_9?igsh=NmZhYjF2djh4d3Jt" target="_blank"
+                            <a href="https://www.instagram.com/malakgraphics1?igsh=MTVnaTBhYjZ6MTVoNg==" target="_blank"
                                 aria-label="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="http://wa.me/201062518135" target="_blank" aria-label="WhatsApp">
+                            <a href="http://wa.me/201157415498" target="_blank" aria-label="WhatsApp">
                                 <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.behance.net/malakesam" target="_blank" aria-label="Behance">
+                                <i class="fab fa-behance"></i>
                             </a>
                         </div>
                     </div>
@@ -544,8 +678,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="js.js"></script>
 </body>
+<script src="js.js"></script>
 
 </html>
+
